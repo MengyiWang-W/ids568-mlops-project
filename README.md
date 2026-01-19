@@ -1,4 +1,5 @@
-# IDS 568 – MLOps Project
+## IDS 568 – MLOps Project
+[![CI](https://github.com/MengyiWang-W/ids568-mlops-project/actions/workflows/ci.yml/badge.svg)](https://github.com/MengyiWang-W/ids568-mlops-project/actions)
 
 ## Overview
 This repository is created for the IDS 568 MLOps course.  
