@@ -20,4 +20,8 @@ This project uses a GitHub Actions workflow to automatically test the environmen
 On each push or pull request to the `main` branch, the workflow installs dependencies from `requirements.txt` in a clean environment and runs a basic pytest smoke test. This ensures the project can run successfully without relying on any local configuration.
 
 ## Relation to the ML Lifecycle
-Reproducible environments help ensure that experiments and results can be consistently reproduced across development and testing stages. This setup provides a starting point for later stages such as model training and deployment. In addition, reproducible environment management reduces deployment risk by minimizing differences between development, testing, and production systems. This improves reliability when models are transferred from experimentation to real-world deployment.
+Reproducible environments are essential throughout the machine learning lifecycle, from experimentation to deployment. During development and testing, consistent environments allow experiments to be reliably reproduced and validated without being affected by differences in system configuration or package versions.
+
+In this project, reproducibility is achieved by pinning dependency versions, specifying a fixed Python version in the CI workflow, and validating the environment through automated tests. This approach reduces discrepancies between local development and automated testing environments.
+
+Establishing reproducibility early in the pipeline helps reduce deployment risk and provides a stable foundation for later ML lifecycle stages such as model training, evaluation, and deployment. By ensuring environment consistency from the start, this project supports more reliable and maintainable ML workflows as they transition from experimentation to real-world use.
